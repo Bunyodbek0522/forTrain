@@ -1,5 +1,48 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: animation1;
+    animation-duration: 5s;
+    position: relative;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition:  1s;
+}
+
+/* @keyframes animation1 {
+    from {
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+
+    to {
+        width: 400px;
+        height: 100px;
+        background-color: rgb(128, 0, 26);
+        left: 100%;    }
+} */
+
+@keyframes animation1 {
+    0%{
+        left: 0;
+        background-color: aqua;
+        transition-duration: all 1s;
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        background-color: rgb(83, 16, 178);
+        transform: rotate(360deg);
+        left: 100%;
+    }
 }
